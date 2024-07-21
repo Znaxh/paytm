@@ -1,3 +1,4 @@
+//backend/config.js
 module.exports = {
-	JWT_SECRET: "Kiratsecret"
+	JWT_SECRET: "your-jwt-secret"
 }
