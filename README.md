@@ -3,5 +3,5 @@
 
 
 - Salting and hashing
-- Frontend improvement
+- Frontend { Responsive }
 - Moving db to cloud
