@@ -1,7 +1,9 @@
 // backend/db.js
 const mongoose = require('mongoose');
-
-mongoose.connect("mongodb://localhost:27017/paytm")
+const connectDB = async () => {
+    await mongoose.connect("mongodb+srv://anuragpratapsingh4845:11223344@cluster0.resqfbs.mongodb.net/?").then(()=>(console.log("connected")))
+}
+connectDB()
 
 // Create a Schema for Users
 const userSchema = new mongoose.Schema({
