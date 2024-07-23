@@ -1,7 +1,8 @@
 // backend/db.js
 const mongoose = require('mongoose');
+const { ConnectDB } = require('./config')
 const connectDB = async () => {
-    await mongoose.connect("mongodb+srv://anuragpratapsingh4845:11223344@cluster0.resqfbs.mongodb.net/?").then(()=>(console.log("connected")))
+    await mongoose.connect(ConnectDB).then(()=>(console.log("connected")))
 }
 connectDB()
 
